@@ -28,7 +28,7 @@ public class MyArrayList {
             Object[] fooArrayAfterIndex = new Object[arrayList.length - index];
             Object[] fooArrayBeforeIndex = arrayDivision(index);
             /*
-             * Создать метод, принимающий на вход массив какой-то и ту длину, которую надо получить*/
+             * */
             Object[] newArray = new Object[arrayList.length + index];
             System.arraycopy(arrayList, index, fooArrayAfterIndex, 0, arrayList.length - index);
             System.arraycopy(arrayList, 0, fooArrayBeforeIndex, 0, index);
@@ -39,7 +39,7 @@ public class MyArrayList {
         }
     }
 
-    //!!!!!! метод поиска элемента массива глянуть и разобраться, почему на входе индекс, на выходе объект?
+    
     public Object get(int index) {
         for (int i = 0; i < arrayList.length; i++) {
             if (i == index) {
